@@ -74,6 +74,11 @@ extern void board_enter_bootloader(void);
 #define MICROPY_HW_SPI2_MISO (pin_B14) // 与用户引脚P1冲突
 #define MICROPY_HW_SPI2_MOSI (pin_B15) // 与用户引脚P0冲突
 
+#define MICROPY_HW_SPI1_MOSI (pin_A7)
+#define MICROPY_HW_SPI1_MISO (pin_A6)
+#define MICROPY_HW_SPI1_SCK (pin_A5)
+#define MICROPY_HW_SPI1_NSS (pin_A15)
+
 // FDCAN bus
 // 注意: CAN2引脚与用户引脚P2/P3有冲突，使用时需要注意
 #define MICROPY_HW_CAN2_NAME "FDCAN2"
